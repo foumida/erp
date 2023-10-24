@@ -1,0 +1,58 @@
+CRITICAL - 2023-06-27 01:19:54 --> Undefined array key "customers_view"
+in APPPATH\Modules\Sales\Controllers\Sales.php on line 43.
+ 1 APPPATH\Modules\Sales\Controllers\Sales.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "customers_view"', 'APPPATH\\Modules\\Sales\\Controllers\\Sales.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customers()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 01:20:21 --> Invalid file: App\Modules\Sales\Views\customer_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Sales\\Views\\customer_view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Sales\\Views\\customer_view', [], true)
+ 3 APPPATH\Modules\Sales\Controllers\Sales.php(43): view('App\\Modules\\Sales\\Views\\customer_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customers()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 01:20:51 --> Invalid file: App\Modules\Sales\Views\customer_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Sales\\Views\\customer_view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Sales\\Views\\customer_view', [], true)
+ 3 APPPATH\Modules\Sales\Controllers\Sales.php(43): view('App\\Modules\\Sales\\Views\\customer_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customers()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 01:21:08 --> Undefined variable $records
+in APPPATH\Modules\Sales\Views\customers_view.php on line 41.
+ 1 APPPATH\Modules\Sales\Views\customers_view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $records', 'APPPATH\\Modules\\Sales\\Views\\customers_view.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\Sales\\Views\\customers_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Sales\\Views\\customers_view', [], true)
+ 5 APPPATH\Modules\Sales\Controllers\Sales.php(43): view('App\\Modules\\Sales\\Views\\customers_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customers()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 04:41:50 --> Undefined variable $records
+in APPPATH\Modules\Sales\Views\customers_view.php on line 41.
+ 1 APPPATH\Modules\Sales\Views\customers_view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $records', 'APPPATH\\Modules\\Sales\\Views\\customers_view.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\Sales\\Views\\customers_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Sales\\Views\\customers_view', [], true)
+ 5 APPPATH\Modules\Sales\Controllers\Sales.php(43): view('App\\Modules\\Sales\\Views\\customers_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customers()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 08:15:26 --> Undefined variable $records
+in APPPATH\Modules\Sales\Views\customers_view.php on line 41.
+ 1 APPPATH\Modules\Sales\Views\customers_view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $records', 'APPPATH\\Modules\\Sales\\Views\\customers_view.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\Sales\\Views\\customers_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Sales\\Views\\customers_view', [], true)
+ 5 APPPATH\Modules\Sales\Controllers\Sales.php(43): view('App\\Modules\\Sales\\Views\\customers_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customers()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

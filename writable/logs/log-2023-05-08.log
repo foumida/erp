@@ -1,0 +1,31 @@
+ERROR - 2023-05-08 10:29:59 --> mysqli_sql_exception: Table 'er2023.branch' doesn't exist in F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\er2023\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\er2023\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\er2023\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\er2023\app\Modules\Master\Controllers\Master.php(49): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\er2023\system\CodeIgniter.php(925): App\Modules\Master\Controllers\Master->branches()
+#8 F:\xampp\htdocs\er2023\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Master\Controllers\Master))
+#9 F:\xampp\htdocs\er2023\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\er2023\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-08 10:29:59 --> Table 'er2023.branch' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `branch`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `branch`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `branch`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `branch`', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\Master\Controllers\Master.php(49): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Master\Controllers\Master->branches()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Master\Controllers\Master))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,157 @@
+CRITICAL - 2023-03-08 01:34:56 --> Undefined array key "designation"
+in APPPATH\Modules\Auth\Views\user_list.php on line 59.
+ 1 APPPATH\Modules\Auth\Views\user_list.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "designation"', 'APPPATH\\Modules\\Auth\\Views\\user_list.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\Auth\\Views\\user_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('Auth\\Views\\user_list', [], true)
+ 5 APPPATH\Modules\Auth\Controllers\AccountController.php(85): view('Auth\\Views\\user_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): Auth\Controllers\AccountController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Auth\Controllers\AccountController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 05:49:01 --> Class "User\Models\UserGroupModel" not found
+in APPPATH\Modules\UserGroup\Controllers\UserGroup.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 05:49:39 --> Class "User\Models\UserGroupModel" not found
+in APPPATH\Modules\UserGroup\Controllers\UserGroup.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 05:50:04 --> mysqli_sql_exception: Table 'er2023.user_group' doesn't exist in F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\er2023\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\er2023\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\er2023\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\er2023\app\Modules\UserGroup\Controllers\UserGroup.php(38): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\er2023\system\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+#8 F:\xampp\htdocs\er2023\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+#9 F:\xampp\htdocs\er2023\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\er2023\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-08 05:50:04 --> Table 'er2023.user_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user_group`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_group`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_group`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_group`', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(38): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 06:40:30 --> mysqli_sql_exception: Table 'er2023.user_group' doesn't exist in F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\er2023\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\er2023\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\er2023\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\er2023\app\Modules\UserGroup\Controllers\UserGroup.php(38): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\er2023\system\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+#8 F:\xampp\htdocs\er2023\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+#9 F:\xampp\htdocs\er2023\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\er2023\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-08 06:40:30 --> Table 'er2023.user_group' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user_group`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_group`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_group`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_group`', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(38): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 06:40:56 --> mysqli_sql_exception: Table 'er2023.user_groups' doesn't exist in F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\xampp\htdocs\er2023\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\er2023\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\er2023\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\er2023\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\er2023\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\xampp\htdocs\er2023\app\Modules\UserGroup\Controllers\UserGroup.php(38): CodeIgniter\BaseModel->findAll()
+#7 F:\xampp\htdocs\er2023\system\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+#8 F:\xampp\htdocs\er2023\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+#9 F:\xampp\htdocs\er2023\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\er2023\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-08 06:40:56 --> Table 'er2023.user_groups' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `user_groups`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user_groups`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user_groups`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user_groups`', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(38): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:45:17 --> Invalid file: App\Modules\Master\Views\usergroups.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Master\\Views\\usergroups.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Master\\Views\\usergroups', [], true)
+ 3 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(53): view('App\\Modules\\Master\\Views\\usergroups', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:45:51 --> Invalid file: App\Modules\Master\Views\usergroups.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Master\\Views\\usergroups.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Master\\Views\\usergroups', [], true)
+ 3 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(53): view('App\\Modules\\Master\\Views\\usergroups', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->userGroupList()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 08:21:16 --> Class "App\Modules\UserGroup\Controllers\BranchModel" not found
+in APPPATH\Modules\UserGroup\Controllers\UserGroup.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->addusergroup()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 20:26:45 --> Cannot use object of type stdClass as array
+in APPPATH\Modules\UserGroup\Views\usergroup_create.php on line 18.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\UserGroup\\Views\\usergroup_create', [], true)
+ 4 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(70): view('App\\Modules\\UserGroup\\Views\\usergroup_create', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->addusergroup()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 20:56:07 --> Undefined variable $data
+in APPPATH\Modules\UserGroup\Controllers\UserGroup.php on line 88.
+ 1 APPPATH\Modules\UserGroup\Controllers\UserGroup.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Modules\\UserGroup\\Controllers\\UserGroup.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Modules\UserGroup\Controllers\UserGroup->saveusergroup()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\UserGroup\Controllers\UserGroup))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

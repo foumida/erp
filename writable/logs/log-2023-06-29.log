@@ -1,0 +1,18 @@
+CRITICAL - 2023-06-29 21:58:01 --> Undefined array key "record"
+in APPPATH\Modules\Sales\Controllers\Sales.php on line 85.
+ 1 APPPATH\Modules\Sales\Controllers\Sales.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "record"', 'APPPATH\\Modules\\Sales\\Controllers\\Sales.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customerAdd()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-29 22:06:28 --> hashPassword is not a valid Model Event callback.
+in SYSTEMPATH\BaseModel.php on line 1479.
+ 1 SYSTEMPATH\BaseModel.php(1479): CodeIgniter\Database\Exceptions\DataException::forInvalidMethodTriggered('hashPassword')
+ 2 SYSTEMPATH\BaseModel.php(747): CodeIgniter\BaseModel->trigger('beforeInsert', [...])
+ 3 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(660): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Modules\Sales\Controllers\Sales.php(111): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Sales\Controllers\Sales->customerAdd()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Sales\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

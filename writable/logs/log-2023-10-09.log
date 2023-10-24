@@ -1,0 +1,12 @@
+CRITICAL - 2023-10-09 00:58:29 --> Undefined array key 1
+in APPPATH\Modules\Common\Views\layout.php on line 300.
+ 1 APPPATH\Modules\Common\Views\layout.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Modules\\Common\\Views\\layout.php', 300)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Modules\\Common\\Views\\layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('App\\Modules\\Common\\Views\\layout', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Modules\\Dashboard\\Views\\dashboard_view', [], true)
+ 6 APPPATH\Modules\Dashboard\Controllers\Dashboard.php(69): view('App\\Modules\\Dashboard\\Views\\dashboard_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Dashboard\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Dashboard\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

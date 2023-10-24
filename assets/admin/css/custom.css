@@ -1,0 +1,100 @@
+.nav-vertical {
+	width: 180px;
+	float: left;
+	margin-bottom: 0;
+	padding-bottom: 25px;
+	margin: 0;
+	border-radius: 4px;
+	overflow: hidden;
+	border: 0;
+	background: #487caa;
+}
+.nav::after {
+	display: table;
+	content: " ";
+}
+.nav-vertical > li {
+	width: 100%;
+	border-bottom: 1px solid #FFF;
+}
+.nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+}
+.nav > li {
+	position: relative;
+	display: block;
+}
+.nav-vertical > li > a {
+	white-space: nowrap;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 9px 11px;
+	border: 0;
+	margin: 1px 0 0 0;
+}
+.nav-tab-theme > li > a {
+	color: #FFF;
+	border-radius: 0;
+	border: 0;
+}
+.nav-tabs > li > a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+}
+.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+.padd20 {
+	padding: 20px;
+}
+.tab-content > .active {
+	display: block;
+}
+.table-responsive {
+	min-height: .01%;
+	overflow-x: scroll;
+}
+.table-theme, .table-theme th, .table-theme td {
+	border-color: #850EA6 !important;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	padding: 3px 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+}
+.table-theme tr > th {
+	background: #d2e8ff;
+}
+.table-theme, .table-theme th, .table-theme td {
+	border-color: #850EA6 !important;
+}
+.table-bordered {
+	border: 1px solid #ddd;
+}
+.tab-content > .tab-pane {
+	display: none;
+}
+hr.theme-divider {
+	margin-top: 10px;
+	border-color: #94beea;
+}
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+hr {
+	height: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.action-icons{cursor:pointer;}

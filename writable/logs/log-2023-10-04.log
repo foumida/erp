@@ -1,0 +1,7 @@
+CRITICAL - 2023-10-04 07:28:21 --> Undefined variable $access
+in APPPATH\Modules\Finance\Controllers\Finance.php on line 37.
+ 1 APPPATH\Modules\Finance\Controllers\Finance.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $access', 'APPPATH\\Modules\\Finance\\Controllers\\Finance.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Modules\Finance\Controllers\Finance->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Finance\Controllers\Finance))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
